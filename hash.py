@@ -2,7 +2,7 @@ key = "ala"
 
 def hf(key):
 
-    hash = [str(bin(ord(x)<<1)) for x in key]
+    hash = [str(bin(ord(x)<<1)[2:]) for x in key]
 
     return "".join(hash)
 
